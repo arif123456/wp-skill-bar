@@ -18,25 +18,25 @@ add_action('init','wpskillbar_post_type');
 function wpskillbar_post_type(){
 
     $labels  = array( 
-        'name'                  => _x('WP Skill Bar','wpepbar'),
-        'singular_name'         =>  _x('WP Skill Bar','wpepbar'),
-        'menu_name'             =>  __('WP Skill Bar','wpepbar'),
-        'parent_item_colon'   => __( 'Parent Item:', 'wpepbar' ),
-        'add_new_item'          =>  __('Add New','wpepbar'),
-        'add_new'               =>  __('Add New','wpepbar'),
-        'all_items'             =>  __('All Skill Bar','wpepbar'),
-        'view_item'             =>  __('View Skill Bar','wpepbar'),
-        'edit_item'             =>  __('Edit Skill Bar','wpepbar'),
-        'update_item'           =>  __('Update Skill Bar','wpepbar'),
-        'search_item'           =>  __('Search Skill Bar','wpepbar'),
-        'not_found'             =>  __('No Skill Bar Found','wpepbar'),
-        'not_found_in_trash'    =>  __('Not Skill Bar found in trash','wpepbar'),
+        'name'                  => _x('WP Skill Bar','skillbarwp'),
+        'singular_name'         =>  _x('WP Skill Bar','skillbarwp'),
+        'menu_name'             =>  __('WP Skill Bar','skillbarwp'),
+        'parent_item_colon'   => __( 'Parent Item:', 'skillbarwp' ),
+        'add_new_item'          =>  __('Add New','skillbarwp'),
+        'add_new'               =>  __('Add New','skillbarwp'),
+        'all_items'             =>  __('All Skill Bar','skillbarwp'),
+        'view_item'             =>  __('View Skill Bar','skillbarwp'),
+        'edit_item'             =>  __('Edit Skill Bar','skillbarwp'),
+        'update_item'           =>  __('Update Skill Bar','skillbarwp'),
+        'search_item'           =>  __('Search Skill Bar','skillbarwp'),
+        'not_found'             =>  __('No Skill Bar Found','skillbarwp'),
+        'not_found_in_trash'    =>  __('Not Skill Bar found in trash','skillbarwp'),
     );
 
     $args = array(
 
-        'label'               => __( 'WP Skill Bar Panels', 'wpepbar' ),
-        'description'         => __( 'WP Skill Bar Panels', 'wpepbar' ),
+        'label'               => __( 'WP Skill Bar Panels', 'skillbarwp' ),
+        'description'         => __( 'WP Skill Bar Panels', 'skillbarwp' ),
         'labels'              => $labels,
         'supports'            => array( 'title', '', '', '', '', '', '', '', '', '', '', ),
         'hierarchical'        => false,

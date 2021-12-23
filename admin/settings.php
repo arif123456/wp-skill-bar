@@ -5,7 +5,7 @@ if( ! defined ( 'ABSPATH' ) ) exit;
 add_action('add_meta_boxes','skill_settings_metabox');
 
 function skill_settings_metabox(){
-    add_meta_box('setting_metabox_id', __('Skill Settings','wpskillbar'),'skill_setting_metabox_cb','skillbar','normal','low');
+    add_meta_box('setting_metabox_id', __('Skill Settings','skillbarwp'),'skill_setting_metabox_cb','skillbar','normal','low');
 }
 
 function skill_setting_metabox_cb(){
@@ -27,19 +27,19 @@ function skill_setting_metabox_cb(){
             <div class="color_settings_option">
                 <ul>
                     <li>
-                        <label><?php _e('Title Color.', 'wpskillbar' ); ?></label>
+                        <label><?php _e('Title Color.', 'skillbarwp' ); ?></label>
                         <input class="color_field" type="hidden" name="skill_title_color" value="<?php echo esc_attr( $skill_title_color ); ?>"/>
                     </li>
                     <li>
-                        <label><?php _e('Bar BG Color.', 'wpskillbar' ); ?></label>
+                        <label><?php _e('Bar BG Color.', 'skillbarwp' ); ?></label>
                         <input class="color_field" type="hidden" name="skill_bar_bg_color" value="<?php echo esc_attr( $skill_bar_bg_color ); ?>"/>
                     </li>
                     <li>
-                        <label><?php _e(' Percentage Bar BG color.', 'wpskillbar' ); ?></label>
+                        <label><?php _e(' Percentage Bar BG color.', 'skillbarwp' ); ?></label>
                         <input class="color_field" type="hidden" name="skill_bar_percentage_bg_color" value="<?php echo esc_attr( $skill_bar_percentage_bg_color ); ?>"/>
                     </li>
                     <li>
-                        <label><?php _e('Percentage Value BG Color.', 'wpskillbar' ); ?></label>
+                        <label><?php _e('Percentage Value BG Color.', 'skillbarwp' ); ?></label>
                         <input class="color_field" type="hidden" name="skill_value_bg_color" value="<?php echo esc_attr( $skill_value_bg_color ); ?>"/>
                     </li>
                     <li>
@@ -50,10 +50,10 @@ function skill_setting_metabox_cb(){
                         );
 
                         ?>
-                        <label><?php esc_attr_e('Title Font Size','wpskillbar'); ?></label>
+                        <label><?php esc_attr_e('Title Font Size','skillbarwp'); ?></label>
                         <select name="skill_title_font_size" id="skill_title_font_size">
 
-                        <option value=""><?php esc_attr_e('Font Size','wpskillbar'); ?></option>
+                        <option value=""><?php esc_attr_e('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($titleFontSize as $titleFont) {
                             if($titleFont == get_post_meta($post->ID, 'skill_title_font_size', true)){
                                 ?>
@@ -72,7 +72,7 @@ function skill_setting_metabox_cb(){
                         </select>
                     </li>
                     <li>
-                        <label><?php esc_attr_e('Title Text Transform','wpskillbar'); ?></label>
+                        <label><?php esc_attr_e('Title Text Transform','skillbarwp'); ?></label>
                         <select name="skill_title_font_family" id="skill_title_font_family">
                             <?php 
 
@@ -81,7 +81,7 @@ function skill_setting_metabox_cb(){
                                 );
 
                             ?>
-                            <option><?php esc_attr_e('Font Family','wpskillbar'); ?></option>
+                            <option><?php esc_attr_e('Font Family','skillbarwp'); ?></option>
                             <?php foreach ($titleFontFamily as $titlefFamily) {
                                 if($titlefFamily == get_post_meta($post->ID, 'skill_title_font_family', true)){
                                     ?>
@@ -107,10 +107,10 @@ function skill_setting_metabox_cb(){
                         );
 
                         ?>
-                        <label><?php echo esc_attr('Percentage Font Size','wpskillbar'); ?></label>
+                        <label><?php echo esc_attr('Percentage Font Size','skillbarwp'); ?></label>
                         <select name="skill_value_font_size" id="skill_value_font_size">
 
-                        <option value=""><?php echo esc_attr('Font Size','wpskillbar'); ?></option>
+                        <option value=""><?php echo esc_attr('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($valueFontSize as $percentageFont) {
                             if($percentageFont == get_post_meta($post->ID, 'skill_value_font_size', true)){
                                 ?>
@@ -128,7 +128,7 @@ function skill_setting_metabox_cb(){
                         </select>
                     </li>
                     <li>
-                        <label><?php _e('Bar Height','wpskillbar'); ?></label>
+                        <label><?php _e('Bar Height','skillbarwp'); ?></label>
                         <select name="skill_bar_height" id="skill_bar_height">
                             <?php 
 
@@ -155,7 +155,7 @@ function skill_setting_metabox_cb(){
                         </select>
                     </li>
                     <li>
-                        <label><?php _e('Bar Border Radius','wpskillbar'); ?></label>
+                        <label><?php _e('Bar Border Radius','skillbarwp'); ?></label>
                         <select name="skill_bar_b_radius" id="skill_bar_b_radius">
                             <?php 
 

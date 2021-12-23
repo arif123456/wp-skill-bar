@@ -1,4 +1,4 @@
-=== WP Skill Bar ===
+=== Skill Bar WP ===
 Contributors: wpfound
 Donate link: https://github.com/arif123456/wp-skill-bar
 Tags: skill bar, progress bar, skill bars
@@ -19,8 +19,8 @@ This plugin awesome wordpress progress bar to show skills in percentage at any p
 == Installation ==
 
 * Go to plugins in your dashboard and select “Add New”
-* Search for “WP Skill Bar”, Install & Activate it
-* When adding the “WP Skill Bar”, you can choose the “WP Skill Bar” 'Plugins' menu in wordpress
+* Search for “Skill Bar WP”, Install & Activate it
+* When adding the “Skill Bar WP”, you can choose the “Skill Bar WP” 'Plugins' menu in wordpress
 * Place shortcode: [WPSKILLBAR id=101]
 
 == Screenshots ==

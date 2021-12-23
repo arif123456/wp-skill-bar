@@ -8,7 +8,7 @@
  * @return void
  */
 function wpskill_bar_metabox(){
-    add_meta_box('wpskillbar_meta_box_id', __('Add Skill','wpskillbar'),'wpskill_add_metabox_cb','skillbar','normal','low');
+    add_meta_box('wpskillbar_meta_box_id', __('Add Skill','skillbarwp'),'wpskill_add_metabox_cb','skillbar','normal','low');
 }
 add_action('add_meta_boxes','wpskill_bar_metabox');
 
@@ -23,7 +23,7 @@ function wpskill_add_metabox_cb($post){
             
     ?>
 
-        <h4><?php  _e('Add Skill','wpskillbar'); ?></h4>
+        <h4><?php  _e('Add Skill','skillbarwp'); ?></h4>
         
         
 
@@ -45,11 +45,11 @@ function wpskill_add_metabox_cb($post){
                             <div id="repeatField">
                                 <div class="single_filed">
                                     <div class="input-field title-field">
-                                        <label><?php _e('Skill Title','wpskillbar'); ?></label>
+                                        <label><?php _e('Skill Title','skillbarwp'); ?></label>
                                         <input type="text" name="skill_title[]" id="skill_title" value="<?php echo esc_attr( $singleValue['skill_title'] ); ?>">
                                     </div>
                                     <div class="input-field value-field">
-                                        <label><?php _e('Skill Value','wpskillbar'); ?></label>
+                                        <label><?php _e('Skill Value','skillbarwp'); ?></label>
                                         <input type="text" name="skill_value[]" id="skill_value" value="<?php echo esc_attr( $singleValue['skill_value'] ); ?>">
                                     </div>
                                     <div class="remove-button">
@@ -68,11 +68,11 @@ function wpskill_add_metabox_cb($post){
                         <div id="repeatField">
                             <div class="single_filed">
                                 <div class="input-field title-field">
-                                    <label><?php _e('Skill Title','wpskillbar'); ?></label>
+                                    <label><?php _e('Skill Title','skillbarwp'); ?></label>
                                     <input type="text" name="skill_title[]" id="skill_title" value="">
                                 </div>
                                 <div class="input-field value-field">
-                                    <label><?php _e('Skill Value','wpskillbar'); ?></label>
+                                    <label><?php _e('Skill Value','skillbarwp'); ?></label>
                                     <input type="text" name="skill_value[]" id="skill_value" value="">
                                 </div>
                                 <div class="remove-button">
@@ -91,11 +91,11 @@ function wpskill_add_metabox_cb($post){
 
         <div class="action">
             <div class="add-item-btn">
-                <a class="add_wpsm_ac_new" id="add_skill" onclick="add_skill()"><?php _e('Add New','wpskillbar'); ?></a>
+                <a class="add_wpsm_ac_new" id="add_skill" onclick="add_skill()"><?php _e('Add New','skillbarwp'); ?></a>
             </div>
             <div class="remove-action">
                 <a class="delete_all" id="delete_all">
-                    <span><?php _e('Delete All','wpskillbar'); ?></span>
+                    <span><?php _e('Delete All','skillbarwp'); ?></span>
                 </a>
             </div>
         </div>
@@ -110,11 +110,11 @@ function wpskill_add_metabox_cb($post){
                     <div class="single_filed">
                     
                         <div class="input-field title-field">
-                            <label><?php _e('Skill Title'); ?></label>
+                            <label><?php _e('Skill Title', 'skillbarwp'); ?></label>
                             <input type="text" name="skill_title[]" id="skill_title" value="">
                         </div>
                         <div class="input-field value-field">
-                            <label><?php _e('Skill Value'); ?></label>
+                            <label><?php _e('Skill Value', 'skillbarwp'); ?></label>
                             <input type="text" name="skill_value[]" id="skill_value" value="">
                         </div>
                         <div class="remove-button">
@@ -145,14 +145,14 @@ function wpskill_add_metabox_cb($post){
 include_once 'data-save.php';
 
 function wpskillbar_shortcode_meta(){
-    add_meta_box('add_metabox_shortcode_id', __('Skillbar Shortcode','wpskillbar'),'wpskillbar_shortcode_cb','skillbar','side','low');
+    add_meta_box('add_metabox_shortcode_id', __('Skillbar Shortcode','skillbarwp'),'wpskillbar_shortcode_cb','skillbar','side','low');
 }
 add_action('add_meta_boxes','wpskillbar_shortcode_meta');
 
 function wpskillbar_shortcode_cb(){
     ?>
         <div class="shortcode_field">
-            <p><?php _e("Use below shortcode in any Page/Post to publish your skill", 'wpskillbar');?></p>
+            <p><?php _e("Use below shortcode in any Page/Post to publish your skill", 'skillbarwp');?></p>
             <input type="text" name="skill_shortcode" value="<?php echo '[WPSKILLBAR id='.get_the_ID().']'?>">
         </div>
 
