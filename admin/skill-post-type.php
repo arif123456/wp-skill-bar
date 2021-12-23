@@ -18,9 +18,9 @@ add_action('init','wpskillbar_post_type');
 function wpskillbar_post_type(){
 
     $labels  = array( 
-        'name'                  => _x('WP Skill Bar','skillbarwp'),
-        'singular_name'         =>  _x('WP Skill Bar','skillbarwp'),
-        'menu_name'             =>  __('WP Skill Bar','skillbarwp'),
+        'name'                  => _x('Skill Bar Wp','skillbarwp'),
+        'singular_name'         =>  _x('Skill Bar','skillbarwp'),
+        'menu_name'             =>  __('Skill Bar WP','skillbarwp'),
         'parent_item_colon'   => __( 'Parent Item:', 'skillbarwp' ),
         'add_new_item'          =>  __('Add New','skillbarwp'),
         'add_new'               =>  __('Add New','skillbarwp'),
@@ -35,8 +35,8 @@ function wpskillbar_post_type(){
 
     $args = array(
 
-        'label'               => __( 'WP Skill Bar Panels', 'skillbarwp' ),
-        'description'         => __( 'WP Skill Bar Panels', 'skillbarwp' ),
+        'label'               => __( 'Skill Bar WP Panels', 'skillbarwp' ),
+        'description'         => __( 'Skill Bar WP Panels', 'skillbarwp' ),
         'labels'              => $labels,
         'supports'            => array( 'title', '', '', '', '', '', '', '', '', '', '', ),
         'hierarchical'        => false,
