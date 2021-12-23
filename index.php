@@ -2,11 +2,11 @@
 
 /**
  * Plugin Name: WP Skill Bar
- * Plugin URI:   https://github.com/arif123456/wp-skill-bar
- * Description: Easy wp progress bar plugin
+ * Plugin URI:  https://github.com/arif123456/wp-skill-bar
+ * Description: This plugin awesome wordpress progress bar to show skills in percentage at any page or post.
  * Version:     1.0.0
  * Author:      WPFound
- * Author URI    https://github.com/arif123456
+ * Author URI   https://github.com/arif123456
  * License:     GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wpskillbar
