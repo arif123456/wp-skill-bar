@@ -1,38 +1,35 @@
-
-
-jQuery(function(jQuery){
+jQuery(function (jQuery) {
 
 	/** 
 	 * 
 	 * Skill remove option
 	 * 
 	*/
-	var accordion = 
+	var accordion =
 	{
 		accordion_ul: '',
-		init: function() 
-		{
+		init: function () {
 			this.accordion_ul = jQuery('#wpskill_bar');
 
-			this.accordion_ul.on('click', '.remove-button', function() {
-			if (confirm('Are you sure you want to delete this?')) {
-				jQuery(this).parent().slideUp(600, function() {
-					jQuery(this).remove('.single_filed');
-				});
-			}
-			return false;
-			});
-				jQuery('#delete_all').on('click', function() {
-				if (confirm('Are you sure you want to delete all the Faq?')) {
-					jQuery("#wpskill_bar").slideUp(600, function() {
-						jQuery("#wpskill_bar").remove();
+			this.accordion_ul.on('click', '.remove-button', function () {
+				if (confirm('Are you sure you want to delete this?')) {
+					jQuery(this).parent().slideUp(600, function () {
+						jQuery(this).remove('.single_filed');
 					});
-					jQuery('html, body').animate({ scrollTop: 0 }, 'fast');
-					
 				}
 				return false;
 			});
-			
+			jQuery('#delete_all').on('click', function () {
+				if (confirm('Are you sure you want to delete all the Faq?')) {
+					jQuery("#wpskill_bar").slideUp(600, function () {
+						jQuery("#wpskill_bar").remove();
+					});
+					jQuery('html, body').animate({ scrollTop: 0 }, 'fast');
+
+				}
+				return false;
+			});
+
 		}
 	};
 	accordion.init();
@@ -42,8 +39,8 @@ jQuery(function(jQuery){
 	 * Skill color settings
 	 * 
 	*/
-	jQuery(document).ready(function($){
-		$('.color_field').each(function(){
+	jQuery(document).ready(function ($) {
+		$('.color_field').each(function () {
 			$(this).wpColorPicker();
 		});
 	})

@@ -1,22 +1,26 @@
 <?php 
-
-
-
-if (! class_exists( 'WPSKILLBAR' ) ) {
+/**
+ * WP_Skill_Bar class
+ *
+ * @class WP_Skill_Bar The class that holds the entire WP_Skill_Bar plugin
+ */
+if (! class_exists( 'WP_Skill_Bar' ) ) {
     
-    class WPSKILLBAR{
+    class WP_Skill_Bar{
 
         /**
-         * instance
-         *  
-         */ 
+         * Singleton pattern
+         *
+         * @var bool $instance
+         */
         private static $instance = null;
-    
+
         /**
-         * get instance
-         * 
-        */
-    
+         * Initializes the WP_Skill_Bar class
+         *
+         * Checks for an existing WP_Skill_Bar instance
+         * and if it cant't find one, then creates it.
+         */
         public static function getInstance(){
             if(is_null(self::$instance)){
                 self::$instance = new self();
@@ -25,8 +29,12 @@ if (! class_exists( 'WPSKILLBAR' ) ) {
         }
     
         /**
-         * constructor
-        */
+         * Define all files constant
+         *
+         * @since  1.0
+         *
+         * @return void
+         */
         public function __construct(){
 
             $this->init();
@@ -34,9 +42,12 @@ if (! class_exists( 'WPSKILLBAR' ) ) {
         }
 
         /**
-         * Initialize
-         * 
-        */
+         * Load all file
+         *
+         * @since  1.0
+         *
+         * @return void
+         */
         public function init(){
 
             if(is_admin()){
@@ -55,23 +66,17 @@ if (! class_exists( 'WPSKILLBAR' ) ) {
             register_deactivation_hook(__FILE__, 'deactivate');
 
         }
-
-
+        
         /**
          * Enqueue scripts and styles.
+         *
+         * @since  1.0
+         *
+         * @return void
          */
         public function wpskillbar_front_end_scripts() {
 
-            /**
-             *Add Style 
-            
-            */
             wp_enqueue_style('wpeb-style-css', plugin_dir_url(__FILE__).  'css/wpskill.css');
-
-            /**
-             *Add Scripts 
-            
-            */
 
             wp_enqueue_script('wpeb-jquery-min-js', plugin_dir_url(__FILE__).  'js/jquery-3.3.1.min.js');
 

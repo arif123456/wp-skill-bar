@@ -1,21 +1,24 @@
 <?php 
 
-/** 
- * 
- * progress bar metabox
- * 
-*/
-
+/**
+ * Metabox
+ *
+ * @since  1.0
+ *
+ * @return void
+ */
 function wpskill_bar_metabox(){
     add_meta_box('wpskillbar_meta_box_id', __('Add Skill','wpskillbar'),'wpskill_add_metabox_cb','skillbar','normal','low');
 }
 add_action('add_meta_boxes','wpskill_bar_metabox');
 
-/** 
- * 
- * add metabox function
- * 
-*/
+/**
+ * Metabox function
+ *
+ * @since  1.0
+ *
+ * @return void
+ */
 function wpskill_add_metabox_cb($post){
             
     ?>
@@ -43,11 +46,11 @@ function wpskill_add_metabox_cb($post){
                                 <div class="single_filed">
                                     <div class="input-field title-field">
                                         <label><?php _e('Skill Title','wpskillbar'); ?></label>
-                                        <input type="text" name="skill_title[]" id="skill_title" value="<?php echo $singleValue['skill_title']; ?>">
+                                        <input type="text" name="skill_title[]" id="skill_title" value="<?php echo esc_attr( $singleValue['skill_title'] ); ?>">
                                     </div>
                                     <div class="input-field value-field">
                                         <label><?php _e('Skill Value','wpskillbar'); ?></label>
-                                        <input type="text" name="skill_value[]" id="skill_value" value="<?php echo $singleValue['skill_value']; ?>">
+                                        <input type="text" name="skill_value[]" id="skill_value" value="<?php echo esc_attr( $singleValue['skill_value'] ); ?>">
                                     </div>
                                     <div class="remove-button">
                                         <a class="remove-btn" id="remove_btn"><i class="fab fa-trash"></i></a>
@@ -129,18 +132,17 @@ function wpskill_add_metabox_cb($post){
         </script>
 
     <?php
-
   
 }
 
-
-/** 
- * 
- * save data function
- * 
-*/
+/**
+ * Save data funciton
+ *
+ * @since  1.0
+ *
+ * @return void
+ */
 include_once 'data-save.php';
-
 
 function wpskillbar_shortcode_meta(){
     add_meta_box('add_metabox_shortcode_id', __('Skillbar Shortcode','wpskillbar'),'wpskillbar_shortcode_cb','skillbar','side','low');

@@ -1,20 +1,18 @@
-
-
 (function ($) {
-	'use strict'
+    'use strict'
 
-	jQuery(document).ready(function($){
-        
+    jQuery(document).ready(function ($) {
+
         $('.skill-percentage').on('inview', function (event, isInView) {
             if (isInView) {
-                $(this).css('width',  function() {
-                    return ($(this).attr('aria-valuenow')+'%');
+                $(this).css('width', function () {
+                    return ($(this).attr('aria-valuenow') + '%');
                 });
-                
+
             }
-        
+
         });
 
-	}); 
+    });
 
 })(jQuery);

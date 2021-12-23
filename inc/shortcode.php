@@ -1,14 +1,17 @@
 <?php
 
-if( !defined( 'ABSPATH' ) ) exit;
+// don't call the file directly
+if ( ! defined( 'ABSPATH' ) ) {
+   exit;
+}
 
-
-/** 
- * 
- * shortcode
- * 
-*/
-
+/**
+ * Define shortcode
+ *
+ * @since  1.0
+ *
+ * @return void
+ */
 function wpskillbar_shortcode($id){
 
    ob_start();

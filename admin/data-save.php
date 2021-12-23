@@ -21,12 +21,11 @@ function wpskillbar_wp_save_meta_data($post_id){
         }
         
         if( !empty($arrayField) && $arrayField != $oldArrayField){
-            update_post_meta( $post_id, 'wpskillbar_save_meta_value', $arrayField);
+            update_post_meta( $post_id, 'wpskillbar_save_meta_value', $arrayField );
         }elseif( empty($arrayField) && $oldArrayField){
-            delete_post_meta($post_id, 'wpskillbar_save_meta_value', $oldArrayField);
+            delete_post_meta( $post_id, 'wpskillbar_save_meta_value', $oldArrayField );
         }
         
-
     }
 
 }

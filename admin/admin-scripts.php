@@ -1,10 +1,11 @@
 <?php
-/** 
- * 
- * admin enqueue scripts
- * 
-*/
-
+/**
+ * Enqueue admin scripts.
+ *
+ * @since  1.0
+ *
+ * @return void
+ */
 add_action('admin_enqueue_scripts','wpskillbar_admin_scripts');
 
 function wpskillbar_admin_scripts(){
