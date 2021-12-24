@@ -50,20 +50,20 @@ function skill_setting_metabox_cb(){
                         );
 
                         ?>
-                        <label><?php esc_attr_e('Title Font Size','skillbarwp'); ?></label>
+                        <label><?php _e('Title Font Size','skillbarwp'); ?></label>
                         <select name="skill_title_font_size" id="skill_title_font_size">
 
-                        <option value=""><?php esc_attr_e('Font Size','skillbarwp'); ?></option>
+                        <option value=""><?php _e('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($titleFontSize as $titleFont) {
                             if($titleFont == get_post_meta($post->ID, 'skill_title_font_size', true)){
                                 ?>
                                 
-                                    <option selected><?php echo $titleFont; ?></option>
+                                    <option selected><?php echo esc_html( $titleFont ); ?></option>
                                 <?php
                             }else{
                                 ?>
                                 
-                                    <option><?php echo $titleFont; ?></option>
+                                    <option><?php echo esc_html( $titleFont ); ?></option>
                                 <?php
                             }
                             
@@ -72,7 +72,7 @@ function skill_setting_metabox_cb(){
                         </select>
                     </li>
                     <li>
-                        <label><?php esc_attr_e('Title Text Transform','skillbarwp'); ?></label>
+                        <label><?php _e('Title Text Transform','skillbarwp'); ?></label>
                         <select name="skill_title_font_family" id="skill_title_font_family">
                             <?php 
 
@@ -81,17 +81,17 @@ function skill_setting_metabox_cb(){
                                 );
 
                             ?>
-                            <option><?php esc_attr_e('Font Family','skillbarwp'); ?></option>
+                            <option><?php _e('Font Family','skillbarwp'); ?></option>
                             <?php foreach ($titleFontFamily as $titlefFamily) {
                                 if($titlefFamily == get_post_meta($post->ID, 'skill_title_font_family', true)){
                                     ?>
                                     
-                                        <option selected><?php echo $titlefFamily; ?></option>
+                                        <option selected><?php echo esc_html( $titlefFamily ); ?></option>
                                     <?php
                                 }else{
                                     ?>
                                     
-                                        <option><?php echo $titlefFamily; ?></option>
+                                        <option><?php echo esc_html( $titlefFamily ); ?></option>
                                     <?php
                                 }
                                 
@@ -107,20 +107,20 @@ function skill_setting_metabox_cb(){
                         );
 
                         ?>
-                        <label><?php echo esc_attr('Percentage Font Size','skillbarwp'); ?></label>
+                        <label><?php _e('Percentage Font Size','skillbarwp'); ?></label>
                         <select name="skill_value_font_size" id="skill_value_font_size">
 
-                        <option value=""><?php echo esc_attr('Font Size','skillbarwp'); ?></option>
+                        <option value=""><?php _e('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($valueFontSize as $percentageFont) {
                             if($percentageFont == get_post_meta($post->ID, 'skill_value_font_size', true)){
                                 ?>
                                     
-                                    <option selected><?php echo $percentageFont; ?></option>
+                                    <option selected><?php echo esc_html( $percentageFont ); ?></option>
                                 <?php
                             }else{
                                 ?>
                                     
-                                    <option><?php echo $percentageFont; ?></option>
+                                    <option><?php echo esc_html( $percentageFont ); ?></option>
                                 <?php
                             }
                         }?>
@@ -141,12 +141,12 @@ function skill_setting_metabox_cb(){
                                 if($heightValue == get_post_meta($post->ID, 'skill_bar_height', true)){
                                     ?>
                                     
-                                        <option selected><?php echo $heightValue; ?></option>
+                                        <option selected><?php echo esc_html( $heightValue ); ?></option>
                                     <?php
                                 }else{
                                     ?>
                                     
-                                        <option><?php echo $heightValue; ?></option>
+                                        <option><?php echo esc_html( $heightValue ); ?></option>
                                     <?php
                                 }
                                 
@@ -168,12 +168,12 @@ function skill_setting_metabox_cb(){
                                 if($rValue == get_post_meta($post->ID, 'skill_bar_b_radius', true)){
                                     ?>
                                     
-                                        <option selected><?php echo $rValue; ?></option>
+                                        <option selected><?php echo esc_html( $rValue ); ?></option>
                                     <?php
                                 }else{
                                     ?>
                                     
-                                        <option><?php echo $rValue; ?></option>
+                                        <option><?php echo esc_html( $rValue ); ?></option>
                                     <?php
                                 }
                                 

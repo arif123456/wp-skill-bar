@@ -1,16 +1,20 @@
 <?php 
 
-if( !defined ( 'ABSPATH' ) ) exit;
+// don't call the file directly
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 
 function wpskillbar_wp_save_meta_data($post_id){
 
-    if(isset($_POST['wpskill_save_meta_data_action'])){
+    if( isset( $_POST['wpskill_save_meta_data_action'] ) ) {
 
         $arrayField = array();
         $oldArrayField = get_post_meta($post_id, 'wpskillbar_save_meta_value', true);
 
-        $progressTitle = $_POST['skill_title'];
-        $progressValue = $_POST['skill_value'];
+        $progressTitle = array_map( 'sanitize_text_field', wp_unslash( $_POST['skill_title'] ) );
+        $progressValue = array_map( 'sanitize_text_field', wp_unslash( $_POST['skill_value'] ) );
+        
         $count = count($progressTitle);
 
         for ($i=0; $i < $count; $i++) { 

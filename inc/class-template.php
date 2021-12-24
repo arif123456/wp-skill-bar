@@ -50,7 +50,7 @@ if (! class_exists( 'WP_Skill_Bar' ) ) {
          */
         public function init(){
 
-            if(is_admin()){
+            if( is_admin() ){
 
                 require_once ( plugin_dir_path(__FILE__) . '../admin/skill-post-type.php');
                 require_once ( plugin_dir_path(__FILE__) . '../admin/skill-metabox.php');
@@ -59,7 +59,7 @@ if (! class_exists( 'WP_Skill_Bar' ) ) {
                 
             }
 
-            add_action( 'wp_enqueue_scripts', array($this,'wpskillbar_front_end_scripts') );
+            add_action( 'wp_enqueue_scripts', array($this,'skillbarwp_front_end_scripts') );
 
             register_activation_hook(__FILE__, 'install');
     
@@ -74,15 +74,13 @@ if (! class_exists( 'WP_Skill_Bar' ) ) {
          *
          * @return void
          */
-        public function wpskillbar_front_end_scripts() {
+        public function skillbarwp_front_end_scripts() {
 
-            wp_enqueue_style('wpeb-style-css', plugin_dir_url(__FILE__).  'css/wpskill.css');
+            wp_enqueue_style('skillbarwp-style-css', plugin_dir_url(__FILE__).  'css/wpskill.css');
 
-            wp_enqueue_script('wpeb-jquery-min-js', plugin_dir_url(__FILE__).  'js/jquery-3.3.1.min.js');
+            wp_enqueue_script('skillbarwp-jquery-inview-js', plugin_dir_url(__FILE__).  'js/jquery.inview.js');
 
-            wp_enqueue_script('wpeb-jquery-inview-js', plugin_dir_url(__FILE__).  'js/jquery.inview.js');
-
-            wp_enqueue_script('wpeb-jquery-js', plugin_dir_url(__FILE__).  'js/wpskill.js');
+            wp_enqueue_script('skillbarwp-jquery-js', plugin_dir_url(__FILE__).  'js/wpskill.js');
 
         }
     
