@@ -10,7 +10,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 
-This plugin awesome wordpress progress bar to show skills in percentage at any page or post.
+This plugin awesome wordpress progress bar to show skills in percentage at any page or post. This skill bar plugin generating a shortcode.
 
 == Description ==
 
@@ -25,7 +25,9 @@ This plugin awesome wordpress progress bar to show skills in percentage at any p
 
 == Screenshots ==
 
-1. This is how to create skill bar.
-4. This is how skill bar will appear.
+1. Add skill bar
+2. Style Settings
+3. Manage skill bar
+4. Frontend Veiw
 
 
