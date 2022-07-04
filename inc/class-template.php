@@ -78,6 +78,8 @@ if (! class_exists( 'WP_Skill_Bar' ) ) {
 
             wp_enqueue_style('skillbarwp-style-css', plugin_dir_url(__FILE__).  'css/wpskill.css');
 
+            wp_enqueue_script( 'jquery' );
+            
             wp_enqueue_script('skillbarwp-jquery-inview-js', plugin_dir_url(__FILE__).  'js/jquery.inview.js');
 
             wp_enqueue_script('skillbarwp-jquery-js', plugin_dir_url(__FILE__).  'js/wpskill.js');

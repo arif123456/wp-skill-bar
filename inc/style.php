@@ -38,4 +38,8 @@ $borderRadius  = ( isset( $postID['skill_bar_b_radius'][0] ) ) ? sanitize_text_f
         text-transform:<?php echo esc_attr( $titleFontFamily ); ?>;
     }
 
+    .skill-percentage span:before{
+        background:<?php echo esc_attr( $valueBgColor ); ?>;
+    }
+
 </style>

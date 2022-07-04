@@ -38,19 +38,32 @@
 
 .skill-percentage span {
     background: #7109A9;
-    width: 30px;
-    height: 30px;
-    display: block;
     position: absolute;
-    right: -12px;
+    right: -20px;
     font-size: 12px;
-    top: -26px;
-    border-radius: 100%;
-    padding: 4px 8px;
+    top: -36px;
+    border-radius: 0;
+    padding: 0px 9px;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-  
+.skill-percentage span:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #7333aa;
+    bottom: -4px;
+    transform: rotate(45deg);
+}
+
+.skill-percentage span label {
+    margin-left: 2px;
+    font-size: 13px;
+}
 
   .skill-percentage{
     width: 0;
