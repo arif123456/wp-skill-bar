@@ -45,11 +45,11 @@ function wpskill_add_metabox_cb($post){
                             <div id="repeatField">
                                 <div class="single_filed">
                                     <div class="input-field title-field">
-                                        <label><?php _e('Skill Title','skillbarwp'); ?></label>
+                                        <label><?php _e('Progress Title','skillbarwp'); ?></label>
                                         <input type="text" name="skill_title[]" id="skill_title" value="<?php echo esc_attr( $singleValue['skill_title'] ); ?>">
                                     </div>
                                     <div class="input-field value-field">
-                                        <label><?php _e('Skill Value','skillbarwp'); ?></label>
+                                        <label><?php _e('Progress Value','skillbarwp'); ?></label>
                                         <input type="text" name="skill_value[]" id="skill_value" value="<?php echo esc_attr( $singleValue['skill_value'] ); ?>">
                                     </div>
                                     <div class="remove-button">
@@ -68,11 +68,11 @@ function wpskill_add_metabox_cb($post){
                         <div id="repeatField">
                             <div class="single_filed">
                                 <div class="input-field title-field">
-                                    <label><?php _e('Skill Title','skillbarwp'); ?></label>
+                                    <label><?php _e('Progress Title','skillbarwp'); ?></label>
                                     <input type="text" name="skill_title[]" id="skill_title" value="">
                                 </div>
                                 <div class="input-field value-field">
-                                    <label><?php _e('Skill Value','skillbarwp'); ?></label>
+                                    <label><?php _e('Progress Value','skillbarwp'); ?></label>
                                     <input type="text" name="skill_value[]" id="skill_value" value="">
                                 </div>
                                 <div class="remove-button">
@@ -110,11 +110,11 @@ function wpskill_add_metabox_cb($post){
                     <div class="single_filed">
                     
                         <div class="input-field title-field">
-                            <label><?php _e('Skill Title', 'skillbarwp'); ?></label>
+                            <label><?php _e('Progress Title', 'skillbarwp'); ?></label>
                             <input type="text" name="skill_title[]" id="skill_title" value="">
                         </div>
                         <div class="input-field value-field">
-                            <label><?php _e('Skill Value', 'skillbarwp'); ?></label>
+                            <label><?php _e('Progress Value', 'skillbarwp'); ?></label>
                             <input type="text" name="skill_value[]" id="skill_value" value="">
                         </div>
                         <div class="remove-button">

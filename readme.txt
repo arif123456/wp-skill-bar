@@ -2,10 +2,10 @@
 Contributors: wpfound
 Donate link: https://github.com/arif123456/wp-skill-bar
 Tags: skill bar, progress bar, skill bars
-Requires at least: 4.4
-Tested up to: 5.8
-Requires PHP: 5.6
-Stable tag: 1.0.2
+Requires at least: 5.4
+Tested up to: 6.2.2
+Requires PHP: 7.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
