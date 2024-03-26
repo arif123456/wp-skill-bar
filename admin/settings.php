@@ -16,7 +16,7 @@ function skill_setting_metabox_cb(){
     $skill_bar_percentage_bg_color = ( isset( $postID['skill_bar_percentage_bg_color'][0] ) ) ? sanitize_text_field( $postID['skill_bar_percentage_bg_color'][0] ) : '';
     $skill_value_bg_color = ( isset( $postID['skill_value_bg_color'][0] ) ) ? sanitize_text_field( $postID['skill_value_bg_color'][0] ) : '';
 
-    $skill_title_font_size =  $postID['skill_title_font_size'];
+    $skill_title_font_size = ( isset( $postID['skill_title_font_size'][0] ) ) ? sanitize_text_field( $postID['skill_title_font_size'][0] ) : '';
 
     $skill_value_font_size = ( isset( $postID['skill_value_font_size'][0] ) ) ? sanitize_text_field( $postID['skill_value_font_size'][0] ) : '';
     
@@ -46,14 +46,12 @@ function skill_setting_metabox_cb(){
                         <?php 
 
                         $titleFontSize = array(
-                            '5px','6px','7px','8px','9px','10px','11px','12px','13px','14px','15px','16px','17px','18px','19px','20px','22px','24px','26px','28px','30px'
+                           '16px','17px','18px','19px','20px','22px','24px','26px','28px','30px'
                         );
 
                         ?>
                         <label><?php _e('Title Font Size','skillbarwp'); ?></label>
                         <select name="skill_title_font_size" id="skill_title_font_size">
-
-                        <option value=""><?php _e('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($titleFontSize as $titleFont) {
                             if($titleFont == get_post_meta($post->ID, 'skill_title_font_size', true)){
                                 ?>
@@ -81,7 +79,6 @@ function skill_setting_metabox_cb(){
                                 );
 
                             ?>
-                            <option><?php _e('Font Family','skillbarwp'); ?></option>
                             <?php foreach ($titleFontFamily as $titlefFamily) {
                                 if($titlefFamily == get_post_meta($post->ID, 'skill_title_font_family', true)){
                                     ?>
@@ -103,14 +100,13 @@ function skill_setting_metabox_cb(){
                         <?php 
 
                         $valueFontSize = array(
-                            '5px','6px','7px','8px','9px','10px','11px','12px','13px','14px','15px','16px'
+                            '10px','12px','13px','14px','15px','16px', '18px', '20px'
                         );
 
                         ?>
                         <label><?php _e('Percentage Font Size','skillbarwp'); ?></label>
                         <select name="skill_value_font_size" id="skill_value_font_size">
 
-                        <option value=""><?php _e('Font Size','skillbarwp'); ?></option>
                         <?php foreach ($valueFontSize as $percentageFont) {
                             if($percentageFont == get_post_meta($post->ID, 'skill_value_font_size', true)){
                                 ?>
@@ -133,7 +129,7 @@ function skill_setting_metabox_cb(){
                             <?php 
 
                                 $skillbarHeight = array(
-                                    '5px','6px','7px','8px','9px','10px','11px','12px','13px','14px','15px','16px','17px','18px','19px','20px','22px','24px','26px','28px','30px','31px','32px','33px','34px','35px','36px','37px','38','39px','40px','41px','42px','43px','44px','45px','46px','47px','48px','49px','50px'
+                                    '8px', '5px', '6px','7px','8px','9px','10px','11px','12px','13px','14px','15px','16px','17px','18px','19px','20px','22px','24px','26px','28px','30px','31px','32px','33px','34px','35px','36px','37px','38','39px','40px','41px','42px','43px','44px','45px','46px','47px','48px','49px','50px'
                                 );
 
                             ?>
@@ -164,6 +160,7 @@ function skill_setting_metabox_cb(){
                                 );
 
                             ?>
+                            <option value="0.25rem"><?php _e('0.25rem','skillbarwp'); ?></option>
                             <?php foreach ($borderRadius as $rValue) {
                                 if($rValue == get_post_meta($post->ID, 'skill_bar_b_radius', true)){
                                     ?>

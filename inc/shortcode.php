@@ -40,14 +40,22 @@ function wpskillbar_shortcode($id){
                
                if($repeatField != ''){
                   foreach ($repeatField as $value) {
-
                      ?>
 
                         <div class="skill-block">
-                            <h4><?php echo esc_html( $value['skill_title'] ); ?></h4>
-                            <div class="skill-item">
-                                <div class="skill-percentage" aria-valuenow="<?php echo esc_attr( $value['skill_value'] ); ?>"><span><?php echo esc_html( $value['skill_value'] ); ?><label><?php esc_html_e( '%', 'skillbarwp' ); ?></label></span></div>
+                           <div class="single-item">
+                              <h4><?php echo esc_html( $value['skill_title'] ); ?></h4>
+                              <div class="skill-item">
+                                 <div class="skill-percentage" aria-valuenow="<?php echo esc_attr( $value['skill_value'] ); ?>"><span><?php echo esc_html( $value['skill_value'] ); ?><label><?php esc_html_e( '%', 'skillbarwp' ); ?></label></span></div>
+                              </div>
+
+                              <?php if ( $value['skill_sub_text'] ) { ?>
+                              <div class="sub_text">
+                                 <p><?php echo esc_html( $value['skill_sub_text'] ); ?></p>
+                              </div>
+                              <?php } ?>
                             </div>
+
                         </div>
 
                      <?php

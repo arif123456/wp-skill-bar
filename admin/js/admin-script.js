@@ -13,8 +13,8 @@ jQuery(function (jQuery) {
 
 			this.accordion_ul.on('click', '.remove-button', function () {
 				if (confirm('Are you sure you want to delete this?')) {
-					jQuery(this).parent().slideUp(600, function () {
-						jQuery(this).remove('.single_filed');
+					jQuery(this).parent().parent().slideUp(600, function () {
+						jQuery(this).remove('.single_filed_wrap');
 					});
 				}
 				return false;

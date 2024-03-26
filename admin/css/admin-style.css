@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-.single_filed label {
+.single_filed label, .sub-text label {
     display: block;
     overflow: hidden;
     font-size: 14px;
@@ -20,25 +20,32 @@
     width: 44%;
 }
 
-.input-field input[type="text"] {
+.input-field input[type="text"], textarea {
     width: 100%;
-    padding: 10px 10px;
+    padding: 6px 10px;
     font-size: 15px;
     font-weight: 400;
     outline: none;
+    margin-bottom: 20px;
 }
 
-.single_filed {
+.single_filed_wrap .sub-text input[type="text"] {
+    width: 91.5%;
+}
+
+.single_filed_wrap .single_filed {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.single_filed {
+.single_filed_wrap {
     box-shadow: 0px 0px 6px 2px #ddd;
     padding: 16px;
     margin-bottom: 30px;
     overflow: hidden;
+    padding-top: 40px;
+    position: relative;
 }
 
 #remove_btn{
@@ -51,14 +58,27 @@
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     outline: none;
+
+    /* background: #DA0B0B;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+    top: 12px;
+    right: 18px; */
+
 }
 
 .remove-btn i {
     font-family: 'FontAwesome';
     font-weight: 800;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .action {
@@ -75,13 +95,14 @@
 }
 
 .action a {
-    background: #31A3DD;
+    background: #625df5;
     display: block;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
-    padding: 27px 0px;
+    padding: 15px 0px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .remove-action a {
@@ -125,6 +146,11 @@
     display: block;
     margin-bottom: 6px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.skill_settings_options .wp-picker-holder {
+    position: absolute;
+
 }
 
 

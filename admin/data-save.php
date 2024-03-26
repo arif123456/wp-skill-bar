@@ -14,6 +14,7 @@ function wpskillbar_wp_save_meta_data($post_id){
 
         $progressTitle = array_map( 'sanitize_text_field', wp_unslash( $_POST['skill_title'] ) );
         $progressValue = array_map( 'sanitize_text_field', wp_unslash( $_POST['skill_value'] ) );
+        $subText = array_map( 'sanitize_text_field', wp_unslash( $_POST['skill_sub_text'] ) );
         
         $count = count($progressTitle);
 
@@ -21,6 +22,7 @@ function wpskillbar_wp_save_meta_data($post_id){
             if($progressTitle[$i] != ''){
                 $arrayField[$i]['skill_title'] = stripslashes($progressTitle[$i]);
                 $arrayField[$i]['skill_value'] = stripslashes($progressValue[$i]);
+                $arrayField[$i]['skill_sub_text'] = stripslashes($subText[$i]);
             }
         }
         

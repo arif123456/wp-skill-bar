@@ -5,7 +5,7 @@ Tags: skill bar, progress bar, skill bars
 Requires at least: 5.4
 Tested up to: 6.2.2
 Requires PHP: 7.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,7 @@ Sleek and polished, this plugin is easy to install, user-friendly, and creates a
 * Slick Frontend and Backend UI
 * Works with any WordPress theme
 * All browser compatible (edited) 
+* Add sub text
 
 == Installation ==
 
@@ -49,4 +50,15 @@ Sleek and polished, this plugin is easy to install, user-friendly, and creates a
 3. Manage skill bar
 4. Frontend Veiw
 
+== Changelog ==
+
+= 1.0.0 =
+* Initial release.
+
+= 1.0.3 =
+* Update: Progress title & value.
+
+= 1.0.4 =
+* Add: Sub text
+* Add: Update UI
 
