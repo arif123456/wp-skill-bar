@@ -75,6 +75,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 20px;
+
 }
 
 .skill-percentage span:before {
@@ -90,6 +92,8 @@
 .skill-percentage span label {
     margin-left: 2px;
     font-size: 13px;
+    margin-bottom: 0;
+    
 }
 
   .skill-percentage{
