@@ -1,16 +1,13 @@
 === Skill Bar WP ===
-Contributors: wpfound
+Contributors: wpfound, ariful93
 Donate link: https://github.com/arif123456/wp-skill-bar
 Tags: skill bar, progress bar, skill bars
 Requires at least: 5.4
 Tested up to: 6.4.3
 Requires PHP: 7.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-
-A WordPress progress bar plugin for showing skills in percentage at any post or  page. Progress bar is useful for website owners to show skills. The Progress bar plugin adds beautiful progress bars or progress meter by generating a shortcode.
 
 == Description ==
 
@@ -21,7 +18,6 @@ Sleek and polished, this plugin is easy to install, user-friendly, and creates a
 = FEATURES =
 * Quick Installation Process
 * Responsive Design
-* Built with Bootstrap
 * HTML5 supported
 * Unlimited colour Scheme
 * Animation Effects

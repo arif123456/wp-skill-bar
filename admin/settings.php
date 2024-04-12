@@ -202,4 +202,3 @@ if ( ! function_exists( 'settings_color_script' ) ){
 		wp_enqueue_script( 'wp-color-picker');
 	}
 }
-
