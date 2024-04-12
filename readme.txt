@@ -9,6 +9,8 @@ Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+This plugin awesome wordpress progress bar to show skills in percentage at any page or post.
+
 == Description ==
 
 A WordPress progress bar plugin for showing skills in percentage at any post or  page. Progress bar is useful for website owners to show skills. The Progress bar plugin adds beautiful progress bars or progress meter by generating a shortcode.
