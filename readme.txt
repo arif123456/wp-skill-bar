@@ -46,6 +46,10 @@ Sleek and polished, this plugin is easy to install, user-friendly, and creates a
 
 == Changelog ==
 
+= 1.0.6 =
+* Update feature list *
+* Add screenshot image *
+
 = 1.0.5 =
 * Percentage value ui issue fix *
 * Compatible with wordpress 6.4.3 *
